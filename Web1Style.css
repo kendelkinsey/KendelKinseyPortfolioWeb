@@ -5,26 +5,39 @@ body{
 
 #HomeContainer{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'DM Sans';
     background-color: white;
-    padding: 50px;
+    padding: 3%;
     margin: 5%;
     border-radius: 20px;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:2fr 1fr;
+}
+#HomeHeader{
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: xxx-large;
+
+}
+
+#HomeText{
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 #HeadShotContainer{
-    display:flex;
-    float:left;
-    background-color: lightskyblue;
-    margin: 4%;
-}
-
-#HomeTextContainer h1{
-    display:flex;
-    float:right;
-}
-
-#HomeTextContainer p1{
-    display:flex;
+    margin-top: 20%;
+    margin-bottom: 10%;
 
 }
+
+#headshot{
+    object-fit: contain;
+    width: 50%;
+}
+
+#AboutButton{
+    justify-content: center;
+}
+
