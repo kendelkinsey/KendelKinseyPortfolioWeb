@@ -1,0 +1,30 @@
+
+body{
+    background-color: cadetblue;
+}
+
+#HomeContainer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    padding: 50px;
+    margin: 5%;
+    border-radius: 20px;
+}
+
+#HeadShotContainer{
+    display:flex;
+    float:left;
+    background-color: lightskyblue;
+    margin: 4%;
+}
+
+#HomeTextContainer h1{
+    display:flex;
+    float:right;
+}
+
+#HomeTextContainer p1{
+    display:flex;
+
+}
