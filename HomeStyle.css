@@ -1,6 +1,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition-duration: 0.4s;
 }
 
 body{
@@ -10,12 +11,19 @@ body{
     background-size: cover;
 }
 
+.BigBG{
+    background-color:maroon;
+    border-radius: 20px;
+    margin: 5%;
+    padding-bottom: 10%;
+
+}
+
 #HomeContainer{
     font-family: 'DM Sans';
     background-color: white;
     padding: 3%;
-    padding-bottom: 17%;
-    margin: 5%;
+    padding-bottom: 10%;
 
     border-radius: 20px;
 }
@@ -56,6 +64,7 @@ body{
 
 .HomeButton {
     padding: 15px 30px;
+    margin-top: 15%;
     border: 2px solid maroon;
     background-color: maroon;
     color: #ffffff;
@@ -101,13 +110,15 @@ body{
     border-radius: 20px;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-family: 'DM Sans';
     padding: 5%;
     margin:5%;
 }
 
 #AboutSchooling, #AboutExperience, #AboutGoal{
-    margin:10%;
     font-size: large;
 }
 
@@ -119,7 +130,8 @@ body{
     background-color: white;
     color: maroon;
     padding: 1%;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
