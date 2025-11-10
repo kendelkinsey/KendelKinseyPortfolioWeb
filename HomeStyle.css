@@ -47,11 +47,12 @@ body{
 #HeadShotContainer{
     margin-top: 20%;
     margin-bottom: 10%;
+    margin-left: 13%;
 }
 
 #headshot{
-    object-fit: contain;
-    width: 50%;
+    object-fit: fill;
+    width: 85%;
 }
 
 #AboutButton{
