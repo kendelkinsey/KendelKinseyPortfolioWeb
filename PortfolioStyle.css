@@ -1,0 +1,181 @@
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 0.4s;
+}
+
+body{
+    background-image: url(".idea/Images/flowers-882828_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bigbg{
+    background-color:maroon;
+    border-radius: 20px;
+    margin: 5%;
+    padding-bottom: 10%;
+
+}
+
+/* Nav Bar style */
+
+#navbar{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: maroon;
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+#nav a:hover {
+    background-color: rgba(238,22,38,0.25);
+}
+
+section {
+    height: 100vh;
+    padding: 30px;
+}
+
+.HomeNavButton, .AboutNavButton, .ContactButton, .PortfolioButton, .ResumeButton {
+    padding: 15px 30px;
+    border: 2px darkgray;
+    background-color: white;
+    color: maroon;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.HomeNavButton::after, .AboutNavButton::after, .ContactButton,::after .PortfolioButton::after, .ResumeButton::after {
+    content: "";
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+            circle,
+            rgba(237, 213, 213, 0.25) 0%,
+            rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.HomeNavButton:hover::after, .AboutNavButton:hover::after, .ContactButton:hover::after, .PortfolioButton:hover::after, .ResumeButton:hover::after {
+    transform: scale(4);
+}
+
+.HomeNavButton:hover, .AboutNavButton:hover, .ContactButton:hover, .PortfolioButton:hover, .ResumeButton:hover {
+    border-color: rgba(117,7,0,0.78);
+    background: rgba(117,7,0,0.50);
+}
+
+.CodingTitle{
+    color: White;
+    text-align: center;
+}
+
+/*dropdown projects*/
+
+.Dropdowns-projects{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+
+    background-color:maroon;
+    border-radius: 20px;
+    padding-bottom: 5%;
+
+}
+
+.Dropdowns1, .Dropdowns2, .Dropdowns3 {
+    background-color: white;
+    width: 28%;
+    border-radius: 20px;
+    display:block;
+    padding: 2%;
+    margin: 5%;
+}
+
+.dropdown-image1, .dropdown-image2, .dropdown-image3 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+
+}
+
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    padding: 15px;
+    background: white;
+}
+
+
+.dropdown-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+
+details[open] .dropdown-wrapper {
+    max-height: 1000px;
+}
+
+details[open] .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+details{
+    overflow: hidden; /* IMPORTANT: keeps the dropdown attached */
+    display: block;
+    width: 100%;
+}
+details:hover{
+    outline: 3px solid rgb(112, 113, 115);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+summary {
+    list-style: none; /* Removes the default arrow in Firefox and older browsers */
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Removes the arrow in Chromium-based browsers (Chrome, Edge, Safari) */
+}
+
+summary::marker {
+    content: ""; /* Another way to remove the marker in modern browsers that support ::marker */
+}
