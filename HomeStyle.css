@@ -61,6 +61,10 @@ body{
     justify-content: center;
 }
 
+#AboutSection{
+    padding-top: 10%;
+}
+
 /* About Button */
 
 .HomeButton {
